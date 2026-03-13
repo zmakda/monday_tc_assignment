@@ -1,0 +1,53 @@
+Nexus Consulting Group — Migration Validation
+==================================================
+CSV loaded — 6 engagements, 27 deliverables
+monday.com — 6 engagements fetched
+monday.com — 27 deliverables fetched
+
+==================================================
+CHECK 1: RECORD COUNTS
+==================================================
+  Engagements  — CSV:   6  |  monday.com:   6  |  PASS
+  Deliverables — CSV:  27  |  monday.com:  27  |  PASS
+
+==================================================
+CHECK 2: MISSING RECORDS
+==================================================
+  PASS — All engagements present in monday.com
+  PASS — All deliverables present in monday.com
+
+==================================================
+CHECK 3: ORPHANED DELIVERABLES
+(Deliverables with no engagement link)
+==================================================
+  PASS — All deliverables are linked to an engagement
+
+==================================================
+CHECK 4: STATUS NORMALISATION
+==================================================
+  PASS — All engagement statuses correctly normalised
+  PASS — All deliverable statuses correctly normalised
+  PASS — All deliverable priorities correctly normalised
+
+==================================================
+CHECK 5: DATA QUALITY — MISSING FIELDS
+==================================================
+  PASS — All engagements have complete field data
+  PASS — All deliverables have complete field data
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+  [PASS]  Record Counts — Engagements
+  [PASS]  Record Counts — Deliverables
+  [PASS]  Missing Records — Engagements
+  [PASS]  Missing Records — Deliverables
+  [PASS]  Orphaned Deliverables
+  [PASS]  Status Normalisation — Engagements
+  [PASS]  Status Normalisation — Deliverables
+  [PASS]  Priority Normalisation
+  [PASS]  Data Quality — Engagements
+  [PASS]  Data Quality — Deliverables
+
+  Result: 10/10 checks passed
+  Migration validated successfully.
